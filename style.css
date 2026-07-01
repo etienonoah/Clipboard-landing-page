@@ -1,0 +1,363 @@
+/* Custom Reset & Base Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #0A2540;
+  --secondary-color: #617385;
+  --bg-color: #FFFFFF;
+  --accent-green: #26BBA4;
+  --accent-blue: #6173FF;
+  --text-dark: #2C3E50;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-dark);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Typography Defaults */
+h1, h2, h3 {
+  color: var(--primary-color);
+  font-weight: 600;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+h3 {
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+p {
+  color: var(--secondary-color);
+  font-size: 1rem;
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+  text-align: center;
+}
+
+.section-desc {
+  max-width: 700px;
+  margin: 0 auto 60px auto;
+  text-align: center;
+}
+
+/* Button & CTA Elements */
+.cta-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 14px 32px;
+  border-radius: 28px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: opacity 0.2s ease, transform 0.1s ease;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  color: #FFF;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-primary {
+  background-color: var(--accent-green);
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.btn-secondary {
+  background-color: var(--accent-blue);
+}
+
+.btn-secondary:hover {
+  opacity: 0.9;
+}
+
+
+.hero {
+  padding: 100px 0 60px 0;
+  text-align: center;
+  background-image: url('images/bg-header-mobile.png'); /* Fallback pattern styling */
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.logo {
+  margin-bottom: 48px;
+}
+
+
+.features-track {
+  padding: 60px 0;
+}
+
+.track-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 40px;
+  align-items: center;
+}
+
+.track-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.mockup-graphic {
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+  background-color: #F5F7F9;
+  border-radius: 8px;
+  border: 1px solid #E2E8F0;
+}
+
+.track-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.feature-item h3 {
+  text-align: center;
+}
+
+.feature-item p {
+  text-align: center;
+}
+
+/* Access Anywhere Section */
+.access {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.access-image {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.devices-graphic {
+  width: 100%;
+  max-width: 600px;
+  height: 250px;
+  background-color: #F5F7F9;
+  border-radius: 8px;
+  border: 1px solid #E2E8F0;
+}
+
+/* Workflow Section */
+.workflow {
+  padding: 60px 0;
+}
+
+.workflow-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  margin-top: 40px;
+}
+
+.workflow-card {
+  text-align: center;
+}
+
+.workflow-card .icon {
+  font-size: 2.5rem;
+  margin-bottom: 24px;
+}
+
+.workflow-card h3 {
+  text-align: center;
+}
+
+/* Brands Section */
+.brands {
+  padding: 60px 0;
+}
+
+.brand-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+
+.brand-logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  opacity: 0.6;
+}
+
+/* Bottom CTA */
+.bottom-cta {
+  padding: 80px 0;
+  text-align: center;
+}
+
+/* Footer Section */
+.footer {
+  background-color: #F5F7F9;
+  padding: 40px 0;
+}
+
+.footer-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+
+.footer-links a {
+  display: block;
+  text-decoration: none;
+  color: var(--primary-color);
+  margin-bottom: 8px;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: var(--accent-green);
+}
+
+.social-links {
+  display: flex;
+  gap: 24px;
+  font-size: 1.5rem;
+}
+
+.social-links a {
+  text-decoration: none;
+}
+
+/* --- Media Queries for Desktop Responsiveness --- */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3.25rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  .cta-group {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .hero {
+    padding: 140px 0 80px 0;
+    background-image: url('images/bg-header-desktop.png');
+  }
+
+  .track-grid {
+    flex-direction: row;
+    gap: 80px;
+    align-items: center;
+    margin-top: 60px;
+  }
+
+  .track-image {
+    width: 50%;
+    justify-content: flex-end;
+  }
+
+  .mockup-graphic {
+    height: 400px;
+    width: 120%; /* Safely overflows gracefully like the design asset */
+    transform: translateX(-10%);
+  }
+
+  .track-content {
+    width: 50%;
+  }
+
+  .feature-item h3, .feature-item p {
+    text-align: left;
+  }
+
+  .devices-graphic {
+    height: 400px;
+  }
+
+  .workflow-grid {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .workflow-card {
+    flex: 1;
+  }
+
+  .brand-flex {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .footer-flex {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-links {
+    flex-direction: row;
+    gap: 60px;
+    text-align: left;
+  }
+}
